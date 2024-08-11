@@ -21,7 +21,6 @@ app.use(cookieParser());
 
 const corsOptions = {
     origin: "https://twitter-clone-eight-virid.vercel.app",
-    w
 }
 
 app.use(cors({
