@@ -20,7 +20,7 @@ const CreatePost = () => {
                 headers: {
                     "Content-Type": "application/json"
                 },
-                withCredentials: true
+                withCredentials: false
             });
             dispatch(getRefresh());
             if (res.data.success) {

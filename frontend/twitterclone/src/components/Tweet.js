@@ -18,7 +18,7 @@ const Tweet = ({ tweet }) => {
     const likeOrDislikeHandler = async (id) => {
         try {
             const res = await axios.put(`${TWEET_API_END_POINT}/like/${id}`, { id: user?._id }, {
-                withCredentials: true
+                withCredentials: false
             })
             console.log(res);
             dispatch(getRefresh());
