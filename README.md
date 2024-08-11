@@ -49,8 +49,8 @@ SocialSphere is a unique social media platform designed to bring people together
 ### Steps
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/socialsphere.git
-   cd socialsphere
+   git clone https://github.com/Voodels/TwitterClone.git
+   cd TwitterClone
    ```
 
 2. **Install dependencies:**
