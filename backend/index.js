@@ -18,11 +18,8 @@ app.use(express.urlencoded({
 }));
 app.use(express.json());
 app.use(cookieParser());
-const corsOptions = {
-    origin:"*",
-    credentials:true
-}
-app.use(cors(corsOptions));
+
+app.use(cors());
 
 // api
 app.use("/api/v1/user",userRoute);
