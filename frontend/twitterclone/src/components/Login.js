@@ -24,7 +24,7 @@ const Login = () => {
           headers: {
             'Content-Type': "application/json"
           },
-          withCredentials: false
+          withCredentials: true
         }); 
         dispatch(getUser(res?.data?.user));
         if(res.data.success){
@@ -42,7 +42,7 @@ const Login = () => {
           headers: {
             'Content-Type': "application/json"
           },
-          withCredentials: false
+          withCredentials: true
         }); 
         if(res.data.success){
           setIsLogin(true);

@@ -19,7 +19,15 @@ app.use(express.urlencoded({
 app.use(express.json());
 app.use(cookieParser());
 
-app.use(cors());
+const corsOptions = {
+    origin: "https://twitter-clone-eight-virid.vercel.app",
+    w
+}
+
+app.use(cors({
+    origin:"https://twitter-clone-eight-virid.vercel.app",
+    credentials:true
+}));
 
 // api
 app.use("/api/v1/user",userRoute);
