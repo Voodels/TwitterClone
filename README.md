@@ -107,7 +107,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 For questions, suggestions, or feedback, please contact:
 - **Project Maintainer:** Your Name - [vighneshpotdar@gmail.com](mailto:vighneshpotdar@gmail.com)
-- **GitHub:** [https://github.com/yourusername/socialsphere]([https://github.com/yourusername/socialsphere](https://github.com/Voodels/TwitterClone.git))
+- **GitHub:** [https://github.com/Voodels/]((https://github.com/Voodels/TwitterClone.git))
 
 ---
 
