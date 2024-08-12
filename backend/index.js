@@ -28,6 +28,15 @@ app.use(cors({
     credentials:true
 }));
 
+// changes -----------------------
+app.use(cors(corsOptions));
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', 'https://twitter-clone-eight-virid.vercel.app');
+    res.header('Access-Control-Allow-Credentials', 'true');
+    res.header('Access-Control-Allow-Methods', 'GET,HEAD,PUT,PATCH,POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    next();
+  });
 // api
 app.use("/api/v1/user",userRoute);
 app.use("/api/v1/tweet", tweetRoute);
