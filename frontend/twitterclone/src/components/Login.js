@@ -18,15 +18,15 @@ const Login = () => {
   const submitHandler = async (e) => {
     e.preventDefault();
     try {
-        const url = isLogin ? `${USER_API_END_POINT}/login` : `${USER_API_END_POINT}/register`;
+        const url = isLogin ? `https://twitterclone-a85d.onrender.com/api/v1/user/login` : 'https://twitterclone-a85d.onrender.com/api/v1/user/register';
         const payload = isLogin ? { email, password } : { name, username, email, password };
 
-        const res = await axios.post(url, payload, {
+        await axios.post(url, payload, {
             headers: {
                 'Content-Type': "application/json"
             },
             withCredentials: true
-        });
+        }).then(res => {
 
         if (res.data.success) {
             if (isLogin) {
@@ -37,6 +37,7 @@ const Login = () => {
             }
             toast.success(res.data.message);
         }
+      })
 
     } catch (error) {
         if (error.response && error.response.data) {
