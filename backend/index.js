@@ -17,10 +17,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOptions = {
-    origin: "https://twitter-clone-eight-virid.vercel.app",
-    credentials: true,
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    allowedHeaders: "Origin, X-Requested-With, Content-Type, Accept",
+    origin: "*"
 };
 
 app.use(cors(corsOptions));
